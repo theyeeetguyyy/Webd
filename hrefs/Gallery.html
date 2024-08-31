@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Solar Services</title>
+    <meta name="description"
+        content="Genius Solar Services offers over 25 years of experience in water purifier services and solar solutions. We provide top-quality installation and maintenance services for solar panels from leading brands like Adani, Havells, and Luminous.">
+    <meta name="keywords"
+        content="solar solutions, solar panels, installation services, Adani, Havells, Luminous, water purifiers, solar energy, renewable energy, solar installation">
+    <meta name="author" content="Genius Solar Services">
+    <meta property="og:title" content="Genius Solar Services - Leading Solar Solutions Provider">
+    <meta property="og:description"
+        content="Expert solar solutions with over 25 years of experience. Offering high-quality installation and maintenance for top solar panel brands.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.6/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../media-queries.css">
+    <style>
+        /* Image Slider */
+        .image-slider {
+            position: relative;
+            overflow: hidden;
+            padding: 20px 0;
+            /* Padding for spacing around the slider */
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 0 10px;
+            /* Padding between images */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            /* Ensure the image scales correctly */
+        }
+
+        /* Navigation Buttons */
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Pagination Dots */
+        .pagination-dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #bbb;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #717171;
+        }
+
+        /* Media Queries for Different Screen Sizes */
+        @media (min-width: 768px) {
+            .slider-container {
+                padding: 0 20px;
+                /* Adjusted padding for tablets */
+            }
+
+            .slide {
+                padding: 0 15px;
+                /* Adjusted space between images */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .slider-container {
+                padding: 0 30px;
+                /* Adjusted padding for desktop screens */
+            }
+
+            .slide {
+                padding: 0 20px;
+                /* Adjusted space between images */
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- top banner -->
+
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text">🌞 Join the Solar Revolution: Power Your Future with Clean Energy
+            </div>
+        </div>
+    </div>
+
+    <!-- nav bar -->
+    <nav>
+        <div class="container main-nav flex" style="z-index: 100;">
+            <a href="../index.html" class="company-logo">
+                <img src="../assets/asset 1.png" alt="company logo">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="../index.html" class="hover-link">Home</a></li>
+                    <li><a href="ongrid.html" class="hover-link">On-Grid</a></li>
+                    <li><a href="offgrid.html" class="hover-link">Off-Grid</a></li>
+                    <li><a href="Gallery.html" class="hover-link">Gallery</a></li>
+                    <li><a href="https://wa.me/+9826712299" class="hover-link secondary-button">
+                            <i class="fab fa-whatsapp"></i> Contact Us</a></li>
+
+
+                </ul>
+            </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="welcome-section">
+        <div class="container">
+            <h1 class="welcome-message" style="color: white;">Welcome to Genius Solar Services</h1>
+            <p class="typewriter-text" style="color: white; z-index: 0;">Providing Innovative Solar Solutions for Your
+                Needs</p>
+        </div>
+    </section>
+
+
+    <!-- Image Slider -->
+    <section class="image-slider" style="padding: 20px 0;">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <!-- Slides -->
+                <div class="slide">
+                    <img src="../assets/gallery/0.jpg" alt="Slide 1">
+                </div>
+                <div class="slide"><img src="../assets/gallery/1.jfif" alt="Slide 2"></div>
+                <div class="slide"><img src="../assets/gallery/3.jfif" alt="Slide 3"></div>
+                <div class="slide"><img src="../assets/gallery/2.jfif" alt="Slide 4"></div>
+                <div class="slide"><img src="../assets/gallery/4.jfif" alt="Slide 5"></div>
+                <div class="slide"><img src="../assets/gallery/5.jfif" alt="Slide 6"></div>
+                <div class="slide"><img src="../assets/gallery/6.jfif" alt="Slide 7"></div>
+
+                <!-- Add more slides as needed -->
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="slider-button prev" aria-label="Previous Slide">&#10094;</button>
+            <button class="slider-button next" aria-label="Next Slide">&#10095;</button>
+
+            <!-- Pagination Dots -->
+            <div class="pagination-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <!-- Add more dots as needed -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- cta section -->
+    <section class="cta-section">
+        <div class="container flex cta-section-container">
+            <h2 style="color: white">Start Your Solar Journey Today</h2>
+            <p>Switch to solar and take control of your energy future.</p>
+            <a href="https://wa.me/+9826712299" class="primary-button">
+                <i class="fab fa-whatsapp"></i> Contact Us
+            </a>
+        </div>
+
+        <div class="contact-info-container" style="display: flex; justify-content: space-between; margin-top: 20px;">
+            <div style="flex: 1; text-align: center;">
+                <p>Contact us:<br>Mr. Dhirendra Bandil<br>Proprietor</p>
+            </div>
+
+            <div style="flex: 1; text-align: center;">
+                <p>Address<br>G-1 Swarna Palace Plot no. 1108 Scheme number 114 Part 1 Vijay Nagar, Indore, (M.
+                    P.)<br>Pin Code: 452010</p>
+            </div>
+
+            <div style="flex: 1; text-align: center;">
+                <p>Phone No.<br>Mobile: +91-9826712299, +91-7828812299<br>Landline: 0731-4004499</p>
+            </div>
+        </div>
+
+        <div class="map-container" style="text-align: center; margin-top: 20px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1839.4697459260192!2d75.8951974!3d22.7676267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39630388e4cbd12f%3A0xc18593ac51c36209!2sAquaguard%20Service%20Center%20indore%20Genius%20aqua%20services%20authorized%20by%20eureka%20Forbes%20ltd!5e0!3m2!1sen!2sin!4v1724962380920!5m2!1sen!2sin"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- subfooter -->
+
+    <div class="subfooter" style="z-index: 100;">
+        <div class="container flex subfooter-container">
+            <a class="hover-link" href="#">Privacy Policy</a>
+            <a class="hover-link" href="#">Terms & Conditions</a>
+            <a class="hover-link" href="#">Security Information</a>
+            <a class="hover-link" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="hover-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="hover-link" href="https://wa.me/+9826712299"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to Top" style="z-index: 1001;">
+        ⬆
+    </button>
+
+</body>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+<script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
+<script>
+    const toggleButton = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const textElement = document.querySelector('.typewriter-text');
+        const text = textElement.textContent;
+        textElement.textContent = '';
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                textElement.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100); // Adjust the speed here
+            }
+        }
+
+        typeWriter();
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const video = document.getElementById('headerVideo');
+
+        // Adjust these values as needed
+        const startTime = 1; // Start at 1 second
+        const endTime = video.duration - 1; // End at 1 second before the end
+
+        video.addEventListener('loadedmetadata', () => {
+            video.currentTime = startTime;
+            video.play();
+        });
+
+        video.addEventListener('timeupdate', () => {
+            if (video.currentTime >= endTime) {
+                video.currentTime = startTime;
+            }
+        });
+    });
+
+    // Get the button
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // Show or hide the button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) { // Show button when scrolled more than 300px
+            scrollToTopBtn.classList.add('show');
+        } else {
+            scrollToTopBtn.classList.remove('show');
+        }
+    });
+
+    // Smooth scroll to the top
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    //map
+    function initMap() {
+        // The location of your place
+        const location = { lat: -34.397, lng: 150.644 };
+
+        // Create a map centered on the location
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 8,
+            center: location,
+        });
+
+        // Add a marker at the location
+        new google.maps.Marker({
+            position: location,
+            map: map,
+        });
+    }
+
+    // Initialize the map after the window loads
+    window.onload = initMap;
+    //map
+
+    //carousal
+    document.addEventListener('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('.slide');
+        const nextButton = document.querySelector('.next');
+        const prevButton = document.querySelector('.prev');
+        const dots = document.querySelectorAll('.dot');
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            if (index >= slides.length) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = slides.length - 1;
+            } else {
+                currentIndex = index;
+            }
+
+            const offset = -currentIndex * 100;
+            document.querySelector('.slider-wrapper').style.transform = `translateX(${offset}%)`;
+
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentIndex].classList.add('active');
+        }
+
+        nextButton.addEventListener('click', () => {
+            showSlide(currentIndex + 1);
+        });
+
+        prevButton.addEventListener('click', () => {
+            showSlide(currentIndex - 1);
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+
+        // Initialize first slide
+        showSlide(currentIndex);
+    });
+
+
+</script>
+
+</html>
